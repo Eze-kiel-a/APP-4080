@@ -5,6 +5,7 @@ function StopWatch(){
     return(
         <div className = "stop-watch-container">
             <button className = "start-button">Start</button>
+            <button className = "stop-button">Stop</button>
             <button className ="reset-button">Reset</button>
         </div>
     )
