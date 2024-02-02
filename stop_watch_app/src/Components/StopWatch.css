@@ -9,7 +9,6 @@
 
 .hours-minutes-seconds-container{
     margin-top: 40vh;
-    height: 10vh;
     font-size: 3em;
     font-weight: 800;
     color: antiquewhite;
@@ -27,13 +26,12 @@
 button{
     appearance: none;
     border: none;
-    width: 100px;
-    height: 50px;
-    margin-right: 3em;
-    margin-left: 3em;
+    width: 5em;
+    height: 3em;
+    margin: 2em;
     border-radius: 12.5px;
     color: #fff;
-    font-size: 18px;
+    font-size: 1.2em;
     font-weight: 800;
 }
 
@@ -53,9 +51,10 @@ button{
 /* Hover effect */
 
 button:hover{
-    width: 125px;
-    height: 75px;
-    font-size: 30px;
+    margin: 0.95em;
+    width: 5.3em;
+    /* height: 3em; */
+    font-size: 1.5em;
     font-weight: 800;
     transition: 0.4s;
     border-radius: 18.5px;
