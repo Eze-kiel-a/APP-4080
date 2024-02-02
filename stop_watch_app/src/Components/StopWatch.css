@@ -1,3 +1,79 @@
-.start-button{
-    background-color: red;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+* {
+    background-color: #000;
+    font-family: Quicksand;
+    text-emphasis: 10em;
 }
+
+.hours-minutes-seconds-container{
+    margin-top: 40vh;
+    height: 10vh;
+    font-size: 3em;
+    font-weight: 800;
+    color: antiquewhite;
+    text-align: center;
+}
+
+.button-container{
+    margin-top: 10vh;
+    list-style: none;
+    height: 30vh;
+    text-align: center;
+    font-family: monospace;
+}
+
+button{
+    appearance: none;
+    border: none;
+    width: 100px;
+    height: 50px;
+    margin-right: 3em;
+    margin-left: 3em;
+    border-radius: 12.5px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.start-button{
+   background-color: #006400;
+   
+}
+
+.stop-button{
+   background-color: #8B0000;
+}
+
+.reset-button{
+   background-color: #00008B;
+}
+
+/* Hover effect */
+
+button:hover{
+    width: 125px;
+    height: 75px;
+    font-size: 30px;
+    font-weight: 800;
+    transition: 0.4s;
+    border-radius: 18.5px;
+}
+
+.start-button:hover{
+    background-color: #fff;
+    color: #006400;
+}
+
+.stop-button:hover{
+    background-color: #fff;
+    color: #8B0000;
+
+}
+
+.reset-button:hover{
+    background-color: #fff;
+    color: #00008B;
+}
+
