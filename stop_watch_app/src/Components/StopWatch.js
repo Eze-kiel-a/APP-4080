@@ -3,15 +3,21 @@ import './StopWatch.css'
 
 function StopWatch(){
 
-    const [time,setTime] = useState(0)
+    const [millisecond, setMillisecond] = useState(0)
+    const [second,setSecond] = useState(0)
+    const [minute, setMinute] = useState(0)
+    const [hour, setHour] = useState(0)
+
 
 
     return(
         <div className = "stop-watch-container">
             <div className = "hours-minutes-seconds-container">
-                <h1>
-                    00:00:00
-                </h1>
+                <p>
+                    {hour}:{minute.toString().padStart(2, "0")}:
+                    {second.toString().padStart(2, "0")}.
+                    <span className='milliseconds'>{millisecond.toString().padStart(2, "0")}</span>
+                </p>
             </div>
             <div className = "button-container">
                 <button className = "start-button" >Start</button>
