@@ -12,7 +12,7 @@
     </header>
     <main>
         <section class="product-list">
-            <!-- Replace with dynamic product data -->
+            
             <div class="product-card">
                 <img src="product1.jpg" alt="Product 1">
                 <h2>Product 1</h2>
