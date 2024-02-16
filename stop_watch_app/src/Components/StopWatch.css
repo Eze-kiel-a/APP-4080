@@ -26,6 +26,7 @@
     height: 30vh;
     text-align: center;
     font-family: monospace;
+    display: flexbox;
 }
 
 button{
@@ -51,6 +52,10 @@ button{
 
 .reset-button{
    background-color: #00008B;
+}
+
+.lap-button{
+    background-color: #36013f;
 }
 
 /* Hover effect */
@@ -79,5 +84,10 @@ button:hover{
 .reset-button:hover{
     background-color: #fff;
     color: #00008B;
+}
+
+.lap-button:hover{
+    background-color: #fff;
+    color: #36013f;
 }
 

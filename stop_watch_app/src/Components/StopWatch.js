@@ -12,12 +12,10 @@ function StopWatch(){
         setTime(0);
     };
 
-    // method to calculate time
-
+    // Calculate time
     useEffect(() => {
         let intervalId;
         if (isRunning) {
-          // setting time from 0 to 1 every 10 milisecond using javascript setInterval method
           intervalId = setInterval(() => setTime(time + 1), 10);
         }
         return () => clearInterval(intervalId);
@@ -35,15 +33,20 @@ function StopWatch(){
     // Milliseconds calculation
     const millisecond = time % 100;
 
-    // Method to start and stop timer
-    const startTimer = () => {
+    // Method to start stopwatch
+    const startStopwatch = () => {
         setIsRunning(true);
     };
 
-    const stopTimer = () => {
+
+    const stopStopwatch = () => {
         setIsRunning(false);
     };
 
+    // method to lap the stopwatch
+    const recordStopwatchReading = () =>{
+
+    }
     
 
     return(
@@ -57,9 +60,10 @@ function StopWatch(){
                 </p>
             </div>
             <div className = "button-container">
-                <button className = "start-button" onClick={startTimer}>Start</button>
-                <button className = "stop-button" onClick={stopTimer}>Stop</button>
+                <button className = "start-button" onClick={startStopwatch}>Start</button>
+                <button className = "stop-button" onClick={stopStopwatch}>Stop</button>
                 <button className ="reset-button" onClick={reset}>Reset</button>
+                <button className ="lap-button" onClick={recordStopwatchReading}>Lap</button>
             </div>
 
         </div>
